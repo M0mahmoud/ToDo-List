@@ -122,3 +122,18 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
+
+input::placeholder{
+  font-size: 15px;
+  opacity: .6;
+}
+
+@media(max-width:767px){
+  .container {
+    width: 90%;
+  }
+  .task-stats,
+  .task-all {
+  width: 90%;
+  }
+}
