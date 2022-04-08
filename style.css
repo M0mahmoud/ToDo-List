@@ -1,0 +1,124 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 600px;  /*-----------*/
+  margin: 30px auto 0;
+  background-color: #f6f6f6;
+}
+.container .add-task {
+  padding: 15px;
+  background-color: #03a9f4;
+  position: relative;
+  border-radius: 4px;
+}
+.container .add-task input {
+  outline: none;
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: calc(100% - 15px);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 4px;
+}
+.container .add-task .plus {
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  background-color: #fff;
+  right: 12px;
+  border-radius: 50%;
+  line-height: 43px;
+  text-align: center;
+  color: darkblue;
+  cursor: pointer;
+  font-size: 35px;
+  transition: transform 0.3s;
+}
+.container .add-task .plus:hover {
+  transform: rotate(90deg);
+}
+.container .tasks-content {
+  padding: 15px;
+}
+.container .tasks-content .no-task {
+  color: #777;
+  font-size: 15px;
+}
+
+.container .tasks-content > span {
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+}
+.container .tasks-content > span:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.container .tasks-content .task-box .delete {
+  float: right;
+  background-color: #e91e63;
+  padding: 4px 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container .tasks-content .task-box.finished {
+  text-decoration: line-through;
+}
+.task-stats,
+.task-all {
+  overflow: hidden;
+  margin: 10px auto;
+  width: 600px;
+  font-size: 12px;
+}
+.task-stats .tasks-count,
+.task-all .tasks-finish {
+  width: fit-content;
+  float: left;
+  padding: 10px;
+  background-color: #e91e63;
+  border-radius: 4px;
+}
+.task-stats .tasks-completed,
+.task-all .tasks-delete {
+  width: fit-content;
+  float: right;
+  padding: 10px;
+  text-align: right;
+  background-color: #03a9f4;
+  border-radius: 4px;
+}
+.task-stats .tasks-count span,
+.task-stats .tasks-completed span {
+  color: #fff;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.task-all .tasks-finish {
+  width: fit-content;
+  background-color: #03a9f4;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.task-all .tasks-delete {
+  width: fit-content;
+  background-color: #e91e63;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
